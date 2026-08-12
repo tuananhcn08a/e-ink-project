@@ -1,0 +1,6 @@
+.DS_Store
+**/.DS_Store
+build/
+*.hex
+*.bin.tmp
+.arduino/

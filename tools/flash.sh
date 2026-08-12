@@ -14,7 +14,8 @@ set -euo pipefail
 export PATH="/opt/homebrew/bin:$PATH"
 
 SKETCH="${1:?usage: flash.sh <sketch-dir> [port]}"
-FQBN="${FQBN:-esp32:esp32:esp32}"
+# Default to 115200 upload: this cable fails at the arduino default 921600.
+FQBN="${FQBN:-esp32:esp32:esp32:UploadSpeed=115200}"
 
 # Auto-detect the ESP32 serial port if not given.
 PORT="${2:-}"

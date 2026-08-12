@@ -1,0 +1,24 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(arduino-cli compile:*)",
+      "Bash(arduino-cli upload:*)",
+      "Bash(arduino-cli monitor:*)",
+      "Bash(arduino-cli lib:*)",
+      "Bash(arduino-cli core:*)",
+      "Bash(arduino-cli board:*)",
+      "Bash(esptool:*)",
+      "Bash(esptool.py:*)",
+      "Bash(tools/flash.sh:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
